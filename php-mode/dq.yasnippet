@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Typo3 debug query
+# key: dq
+# --
+
+$GLOBALS['TYPO3_DB']->store_lastBuiltQuery = true;
+$0
+fb($GLOBALS['TYPO3_DB']->debug_lastBuiltQuery);

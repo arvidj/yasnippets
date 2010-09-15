@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Typo3 Execute delete-query
+# key: tdel
+# --
+$GLOBALS['TYPO3_DB']->exec_DELETEquery(
+    ${1:$table}, 
+    ${2:$where},
+);
+$0

@@ -1,7 +1,5 @@
 # -*- mode: snippet -*-
-# name: console.log(...);
+# name: console.log(arg, 'arg');
 # key: co
-# binding: "keybinding"
 # --
-console.log($1);
-$0
+console.log('${1:$(concat (replace-regexp-in-string "'" "\\\\'" text nil t) ":")}', ${1:variable});$0

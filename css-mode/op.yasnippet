@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Opacity
+# key: op
+# --
+opacity: $1;
+filter: alpha(opacity=${1:$(format "%d" (* 100 (string-to-number yas/text)))});$0
