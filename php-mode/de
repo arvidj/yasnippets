@@ -2,5 +2,4 @@
 #name : debug(...)
 #group : control structure
 # --
-debug($$1);
-$0
+debug(${1:variable}, '${1:$(replace-regexp-in-string "'" "\\\\'" text nil t)}');$0
