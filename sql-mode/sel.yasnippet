@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Select
+# key: sel
+# --
+SELECT ${1:*} FROM ${2:table$$(replace-regexp-in-string "[- ]" "_" yas/text)} WHERE ${3:1=1};$0

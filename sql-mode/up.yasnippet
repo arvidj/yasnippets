@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Update
+# key: up
+# --
+UPDATE ${1:table$$(replace-regexp-in-string "[- ]" "_" yas/text)} SET ${2:asdf = zxcv} WHERE ${3:uid = ${4:some_id}} ${5:LIMIT 1};$0
