@@ -3,13 +3,28 @@
 #group : definitions
 # --
 <?php
-/**
- * ${1:file_title}
+/***************************************************************
+ *  Copyright notice
  *
- * @package   ${2:package}
- * @author    ${3:Arvid Jakobsson} <${4:arvid@gluteus.se}>
- * @copyright Copyright (c) ${5:`(format-time-string "%Y" (current-time))`} ${6:copyright}
- */
+ *  (c) 2009 ${3:Arvid Jakobsson} <${4:arvid@gluteus.se}>
+ *  All rights reserved
+ *
+ *  This script is part of the TYPO3 project. The TYPO3 project is
+ *  free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The GNU General Public License can be found at
+ *  http://www.gnu.org/copyleft/gpl.html.
+ *
+ *  This script is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  This copyright notice MUST APPEAR in all copies of the script!
+ ***************************************************************/
 
 /**
  * $1
@@ -18,23 +33,8 @@
  *
  * @package $2
  * @author  $3 <$4>
- * @copyright Copyright (c) $5 $6
  */
-class ${8:`(replace-regexp-in-string
- "^_+" ""
- (mapconcat
-  #'identity
-  (split-string
-   ((lambda (a)
-      (substring a (let ((case-fold-search nil))
-                     (string-match "\\\\(/[A-Z][a-zA-Z0-9]+\\\\)+$" a )
-                     ))
-      )
-    (file-name-sans-extension (buffer-file-name))
-    ) "/") "_"))`} {
-   public function ${9:__construct}() {
-      $0
-   }
+class $1 {
+	  $0
 }
-
 ?>
