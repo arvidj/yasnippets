@@ -6,7 +6,7 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2009 ${3:Arvid Jakobsson} <${4:arvid@gluteus.se}>
+ *  (c) 2011 ${3:Arvid Jakobsson} <${4:arvid@gluteus.se}>
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -34,7 +34,7 @@
  * @package $2
  * @author  $3 <$4>
  */
-class $1 {
+class ${1:`(replace-regexp-in-string "^class\." "" (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`} {
 	  $0
 }
 ?>
